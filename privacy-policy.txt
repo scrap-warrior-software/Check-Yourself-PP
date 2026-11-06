@@ -1,0 +1,18 @@
+Check Yourself keeps its data in the browser's own storage. What is stored: the site list and the
+settings, the intention text you type, and one record per session (site, start time, minutes chosen,
+status). History is capped at 50 entries on the free plan and 500 as a hard ceiling, and you can
+delete one entry or clear the whole history from the popup. The site list and settings are mirrored
+through Chrome sync storage only on premium, which carries them between your own signed-in devices.
+
+No data is sent to a server we run. The only external contact is the payment provider
+extensionpay.com, and only when its slug is configured: the extension asks the provider for a key,
+then reads the plan record for that key, which contains your email address and payment status. The
+provider handles payment; this extension never sees card data.
+
+We do not use or transfer data for advertising, profiling, creditworthiness or lending, and we do not
+sell it. No human reads your data, because there is no server that receives it. Console output is
+failure-path only and stays in your own DevTools. Data is removed when you delete it in the popup or
+when the extension is uninstalled.
+
+Limited Use: data collected by this extension is used only to provide the single purpose described on
+its Chrome Web Store page. Last updated 2026-11-06.
